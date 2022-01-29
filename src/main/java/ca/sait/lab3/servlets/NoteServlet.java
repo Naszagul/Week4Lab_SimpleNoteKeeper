@@ -65,13 +65,16 @@ public class NoteServlet extends HttpServlet {
 
         PrintWriter pw = new PrintWriter(new BufferedWriter(new FileWriter(path, false)));
 
-        String title = br.readLine();
-        String contents = br.readLine();
+        String title = request.getParameter("title");
+        String contents = request.getParameter("contents");
+
+        pw.println(title);
+        pw.println(contents);
+        pw.close();
 
         Note note = new Note(title,contents);
 
         request.setAttribute("note", note);
-
         getServletContext().getRequestDispatcher("/WEB-INF/viewnote.jsp").forward(request, response);
         
     }
