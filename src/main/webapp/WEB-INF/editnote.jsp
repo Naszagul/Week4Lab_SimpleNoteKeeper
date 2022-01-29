@@ -15,9 +15,9 @@
         <h1>Edit Note</h1>
         <form action="note" method="post">
             <label for="title">Title: </label>
-            <input type="text" name="title" id="title"><br>
+            <input type="text" name="title" id="title" value="${note.title}"><br>
             <label for="contents">Contents: </label>
-            <input type="textarea" name="contents" id="contents"><br>
+            <input type="textarea" name="contents" id="contents" value="${note.contents}"><br>
             <input type="submit" value="Save">
         </form>
     </body>
