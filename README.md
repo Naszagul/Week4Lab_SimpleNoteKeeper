@@ -1,2 +1,4 @@
-# Week4Lab_SimpleNoteKeeper
+# Simple Note Keeper Lab3
+
+# Author: Regan Preston
  
